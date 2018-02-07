@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 
-let defaultTextColor = '#a90585'
+
 let defaultStyle = {
-  color: defaultTextColor
+  color: '#a90585'
 }
 class Aggregate extends Component {
   render () {
@@ -52,7 +52,9 @@ class App extends Component {
     let headerStyle = {color: 'red', 'font-size': '50px'}
     return (
       <div className="App">
-        <h1>Title</h1>
+        <h1 style={{...defaultStyle, 'font-size': '54px'}}>
+          {name}'s Blog
+        </h1>
         <Aggregate/>
         <Aggregate/>
         <Filter/>
